@@ -78,20 +78,8 @@ export const WETH = {
     'WETH',
     'Wrapped Ether'
   ),
-  [ChainId.GÖRLI]: new Token(
-    ChainId.GÖRLI,
-    '0xB4FBF271143F4FBf7B91A5ded31805e42b2208d6',
-    18,
-    'WETH',
-    'Wrapped Ether'
-  ),
-  [ChainId.KOVAN]: new Token(
-    ChainId.KOVAN,
-    '0xd0A1E359811322d97991E03f863a0C30C2cF029C',
-    18,
-    'WETH',
-    'Wrapped Ether'
-  ),
+  [ChainId.GÖRLI]: new Token(ChainId.GÖRLI, '0xB4FBF271143F4FBf7B91A5ded31805e42b2208d6', 18, 'WETH', 'Wrapped Ether'),
+  [ChainId.KOVAN]: new Token(ChainId.KOVAN, '0xd0A1E359811322d97991E03f863a0C30C2cF029C', 18, 'WETH', 'Wrapped Ether'),
   [ChainId.BSC_MAINNET]: new Token(
     ChainId.BSC_MAINNET,
     '0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c',
@@ -106,18 +94,18 @@ export const WETH = {
     'WBNB',
     'Wrapped BNB'
   ),
-  [ChainId.HARMONY_MAINNET]: new Token(
-    ChainId.HARMONY_MAINNET,
-    '0xcF664087a5bB0237a0BAd6742852ec6c8d69A27a',
+  [ChainId.POLYGON_MAINNET]: new Token(
+    ChainId.POLYGON_MAINNET,
+    '0x0d500B1d8E8eF31E21C99d1Db9A6444d3ADf1270',
     18,
-    'WONE',
-    'Wrapped ONE'
+    'WMATIC',
+    'Wrapped MATIC'
   ),
-  [ChainId.HARMONY_TESTNET]: new Token(
-    ChainId.HARMONY_TESTNET,
-    '0x7466d7d0C21Fa05F32F5a0Fa27e12bdC06348Ce2',
+  [ChainId.POLYGON_TESTNET]: new Token(
+    ChainId.POLYGON_TESTNET,
+    '0x9c3C9283D3e44854697Cd22D3Faa240Cfb032889',
     18,
-    'WONE',
-    'Wrapped ONE'
-  )
+    'WMATIC',
+    'Wrapped MATIC'
+  ),
 }

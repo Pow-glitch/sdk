@@ -19,9 +19,9 @@ export class Currency {
   public static readonly ETHER: Currency = new Currency(18, 'ETH', 'Ether')
 
   /**
-   * The HARMONY instance of the base class `Currency`.
+   * The POLYGON instance of the base class `Currency`.
    */
-  public static readonly HARMONY: Currency = new Currency(18, 'ONE', 'Harmony')
+  public static readonly POLYGON: Currency = new Currency(18, 'MATIC', 'POLYGON')
 
   /**
    * The BINANCE_COIN instance of the base class `Currency`.
@@ -44,8 +44,8 @@ export class Currency {
 }
 
 const ETHER = Currency.ETHER
-const HARMONY = Currency.HARMONY
+const POLYGON = Currency.POLYGON
 const BINANCE_COIN = Currency.BINANCE_COIN
-const DEFAULT_CURRENCIES = [ETHER, HARMONY, BINANCE_COIN]
+const DEFAULT_CURRENCIES = [ETHER, POLYGON, BINANCE_COIN]
 
-export { ETHER, HARMONY, BINANCE_COIN, DEFAULT_CURRENCIES }
+export { ETHER, POLYGON, BINANCE_COIN, DEFAULT_CURRENCIES }
