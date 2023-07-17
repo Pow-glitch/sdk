@@ -6,7 +6,7 @@ export type BigintIsh = JSBI | bigint | string
 export enum Blockchain {
   ETHEREUM = 1,
   BINANCE_SMART_CHAIN = 2,
-  POLYGON = 3,
+  POLYGON = 3
 }
 
 export enum ChainId {
@@ -18,18 +18,18 @@ export enum ChainId {
   BSC_MAINNET = 56,
   BSC_TESTNET = 97,
   POLYGON_MAINNET = 137,
-  POLYGON_TESTNET = 80001,
+  POLYGON_TESTNET = 80001
 }
 
 export enum TradeType {
   EXACT_INPUT,
-  EXACT_OUTPUT,
+  EXACT_OUTPUT
 }
 
 export enum Rounding {
   ROUND_DOWN,
   ROUND_HALF_UP,
-  ROUND_UP,
+  ROUND_UP
 }
 
 export const FACTORY_ADDRESSES: { [chainId in ChainId]: string } = {
@@ -39,12 +39,12 @@ export const FACTORY_ADDRESSES: { [chainId in ChainId]: string } = {
   [ChainId.GÖRLI]: '0x0000000000000000000000000000000000000001',
   [ChainId.KOVAN]: '0x0000000000000000000000000000000000000001',
   [ChainId.BSC_MAINNET]: '0x0000000000000000000000000000000000000001',
-  [ChainId.BSC_TESTNET]: '0xD6D546C6408CD06AC6e86f6e5d03dac41d2f3847',
-  [ChainId.POLYGON_MAINNET]: '0xAC430362BD49833FEDAdd83Ea4EEcdEEB0287a2C',
-  [ChainId.POLYGON_TESTNET]: '0x6543cf1D93828d193E58310E960d09083E62A49B',
+  [ChainId.BSC_TESTNET]: '0x0000000000000000000000000000000000000001',
+  [ChainId.POLYGON_MAINNET]: '0xE3317f07F5792c11Afe722a587115787340a9efF',
+  [ChainId.POLYGON_TESTNET]: '0x6543cf1D93828d193E58310E960d09083E62A49B'
 }
 
-export const INIT_CODE_HASH = '0x02cf1cb1c6ad975e009f9757435343186d8507b093a2e9584712f4df62d2ad30'
+export const INIT_CODE_HASH = '0x5a77fa32a0cbcaf5d94bcdadc7dec986e0761ebf596dc23a4e94f5c800a20ce3'
 
 export const MINIMUM_LIQUIDITY = JSBI.BigInt(1000)
 
@@ -61,10 +61,10 @@ export const _1000 = JSBI.BigInt(1000)
 
 export enum SolidityType {
   uint8 = 'uint8',
-  uint256 = 'uint256',
+  uint256 = 'uint256'
 }
 
 export const SOLIDITY_TYPE_MAXIMA = {
   [SolidityType.uint8]: JSBI.BigInt('0xff'),
-  [SolidityType.uint256]: JSBI.BigInt('0xffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff'),
+  [SolidityType.uint256]: JSBI.BigInt('0xffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff')
 }
